@@ -4,8 +4,6 @@
 
   border: 1px solid;
   @include border-radius(10px);
-
-  overflow: hidden;
 }
 
 .large-font {
@@ -27,4 +25,3 @@
   border-color: green;
   background: lighten(green, 40%);
 }
-

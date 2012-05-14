@@ -38,7 +38,7 @@ Cactus.expect(".notice p", "font-size").toEqual("20px");
 
 
 
-//////////
+////////////
 //// Refactored
 //
 //function test_round_box(selector) {
