@@ -1,0 +1,21 @@
+.alert {
+  padding: 10px;
+  margin: 10px 0;
+  @include border-radius(10px);
+
+  border: 1px solid red;
+  background: lighten(red, 40%);
+
+  font-size: 20px;
+}
+
+.notice {
+  padding: 10px;
+  margin: 10px 0;
+  @include border-radius(10px);
+
+  border: 1px solid green;
+  background: lighten(green, 40%);
+
+  font-size: 20px;
+}

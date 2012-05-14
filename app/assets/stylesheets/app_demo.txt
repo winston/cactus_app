@@ -1,0 +1,57 @@
+- explain Cactus setup
+
+- show style guide
+
+- show css
+
+- how can I refactor?
+- let's write some tests
+  - explain
+- refactor 1 - mixins  and includes
+- refactor 2 - context and extend
+- refactor tests too
+
+- add more html and css
+
+- profile box (show image)
+- add html
+.profile
+  = image_tag "p1.jpg", alt: "Winston Teo"
+  .name Winston Teo
+
+- add specs
+Cactus.expect(".profile", "width").toEqual("200px");
+test_round_box(".profile");
+test_large_font(".profile .name");
+
+- add css
+.profile {
+  width     : 200px;
+  @extend .round-box;
+  text-align: center;
+
+  .name {
+    @extend .large-font;
+  }
+}
+
+
+- run specs
+
+- add p
+%p Smart and Handsome
+
+- add specs
+Cactus.expect(".profile p", "font-size").toEqual("12px");
+
+- add css
+p {
+  font-size: 12px;
+}
+
+- run specs (it broke everything)
+
+- make it pass
+
+- how about automation?
+  - rspec with capybara

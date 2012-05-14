@@ -1,0 +1,27 @@
+@import 'bourbon';
+@import 'flash.scss';
+@import 'profile.scss';
+
+body {
+  font-family: $helvetica;
+  color: #333;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+
+  &:hover {
+    color: darken(blue, 20%);
+    text-decoration: underline;
+  }
+}
+
+img {
+  width : 120px;
+  height: 120px;
+}

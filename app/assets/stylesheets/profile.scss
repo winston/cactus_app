@@ -1,0 +1,9 @@
+.profile {
+  width     : 200px;
+  @extend .round-box;
+  text-align: center;
+
+  .name {
+    @extend .large-font;
+  }
+}
