@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.3'
-gem 'sqlite3'
+gem 'jquery-rails'
 
 group :assets do
   gem 'haml-rails'    , '~> 0.3.4'
@@ -17,5 +17,3 @@ group :development, :test do
   gem 'capybara'
   gem 'cactus', path: "~/Dev/github/cactus"
 end
-
-gem 'jquery-rails'
