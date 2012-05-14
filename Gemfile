@@ -15,5 +15,5 @@ end
 group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
-  gem 'cactus', path: "~/Dev/github/cactus"
+  gem 'cactus'
 end
