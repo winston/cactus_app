@@ -2,9 +2,9 @@
   padding: 10px;
   margin: 10px 0;
   @include border-radius(10px);
-
   font-size: 20px;
 }
+
 
 .alert {
   @include flash;
