@@ -1,57 +1,56 @@
-- explain Cactus setup
+0. show index.haml (style guide)
 
-- show style guide
+1. show flash.css (css)
 
-- show css
+2. show application_spec.js (specs)
 
-- how can I refactor?
-- let's write some tests
-  - explain
+3. show flash.scss 
+
+how can I refactor?
 - refactor 1 - mixins  and includes
-- refactor 2 - context and extend
+- refactor 2.1 - class and extend
+- refactor 2.2 - border
 - refactor tests too
 
+4. show preview mockup
 - add more html and css
 
 - profile box (show image)
-- add html
+- add html to index.haml
+
 .profile
-  = image_tag "p1.jpg", alt: "Winston Teo"
+  = image_tag "p1.jpg"
   .name Winston Teo
 
-- add specs
-Cactus.expect(".profile", "width").toEqual("200px");
+5.0 add specs for profile snippet
 test_round_box(".profile");
 test_large_font(".profile .name");
 
-- add css
-.profile {
-  width     : 200px;
-  @extend .round-box;
-  text-align: center;
+6.0 Add css for profile snippet to flash.css
 
+.profile {
+  @extend .round-box;
   .name {
     @extend .large-font;
   }
 }
 
+<BAD CASE SCENARIO>
+7.0 Add description to html
 
-- run specs
-
-- add p
 %p Smart and Handsome
 
-- add specs
-Cactus.expect(".profile p", "font-size").toEqual("12px");
-
-- add css
+8.0 Add css 
+  
 p {
   font-size: 12px;
 }
 
-- run specs (it broke everything)
+9.0 Run specs - see it broken
 
-- make it pass
+10.0 Move p nested under .profile to make it pass
 
-- how about automation?
-  - rspec with capybara
+11.0 how about automation? - rspec with capybara
+ > Show cactus_spec.rb
+ > Show spec_helper.rb
+ 
