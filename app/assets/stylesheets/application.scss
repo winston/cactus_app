@@ -20,7 +20,12 @@ a {
   }
 }
 
-img {
-  width : 120px;
-  height: 120px;
+/* Hacks to make Demo smoooth*/
+.profile {
+  width: 200px;
+
+  img {
+    width : 120px;
+    height: 120px;
+  }
 }
